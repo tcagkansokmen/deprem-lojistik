@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
 
     {{-- Title Section --}}
-    <title>Deprem Yardım</title>
+    <title>{{ env('APP_NAME')  }}</title>
 
     {{-- Meta Data --}}
     <meta name="description" content="Deprem Yardım"/>
