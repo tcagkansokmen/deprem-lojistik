@@ -139,7 +139,6 @@ $(document).ready(function () {
 </script>
 
 <script>
-
     $("body").on('click', '.detail-modal', function(e){
         e.preventDefault()
 
