@@ -108,3 +108,17 @@ body{
 .btn-block{
     display:block;
 }
+
+.modal-content{
+    background:#f7f7f7;
+}
+
+.modal-content h5{
+    font-weight:900;
+    font-size:14px;
+}
+.modal-content label{
+    display:block;
+    margin-bottom:7px;
+    font-size:12px;
+}

@@ -170,7 +170,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-2">
-                                                <button class="btn btn-danger" style="margin-top:30px;" data-repeater-delete type="button">Sil</button>
+                                                <button class="btn btn-sm btn-danger" style="margin-top:25px;" data-repeater-delete type="button">Sil</button>
                                             </div>
                                         </div>
                                     </div>
