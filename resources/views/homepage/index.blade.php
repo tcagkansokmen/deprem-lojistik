@@ -22,54 +22,59 @@
             }
         }
     </style>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <form action="/" method="GET">
-                    <x-honeypot />
-                <div class="filter-wrapper" >
-                    <div class="form-group" style="margin-right:20px;">
-                        <label for="">Varış Yerine Göre</label>
-                        <select name="to" id="" class="form-control">
-                            <option value="">Seçiniz</option>
-                            @foreach($arriving as $city)
-                                <option value="{{ $city }}" {{ Request::get('to') == $city ? 'selected' : null  }}>{{ $city }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="form-group" style="margin-right:20px;">
-                        <label for="">Yardım Türüne Göre</label>
-                        <select name="category_id" id="" class="form-control">
-                            <option value="">Seçiniz</option>
-                            @foreach($categories as $category)
-                                <option value="{{ $category->id }}" {{ Request::get('category_id') == $category->id ? 'selected' : null  }}>{{ $category->name }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="form-group" style="margin-right:20px;">
-                        <label for="">Statüsüne Göre</label>
-                        <select name="status" id="" class="form-control">
-                            <option value="">Seçiniz</option>
-                            <option value="is_arrived" {{ Request::get('status') == 'is_arrived' ? 'selected' : null  }}>Yardım Ulaştı/Bekliyor</option>
-                            <option value="is_done" {{ Request::get('status') == 'is_done' ? 'selected' : null  }}>Yardım Tamamlandı</option>
-                            <option value="on_road" {{ Request::get('status') == 'on_road' ? 'selected' : null  }}>Yardım Yolda</option>
-                        </select>
-                    </div>
-                    <div class="form-group" style="margin-right:20px;">
-                        <label for="">Plaka/İsme Göre</label>
-                        <input type="text" name="name" class="form-control" value="{{ Request::get('name') }}">
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-success" style="margin-top:23px;">Filtrele</button>
-                    </div>
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="/" method="GET">
+                        <x-honeypot />
+                        <div class="filter-wrapper" >
+                            <div class="form-group" style="margin-right:20px;">
+                                <label for="">Varış Yerine Göre</label>
+                                <select name="to" id="" class="form-control">
+                                    <option value="">Seçiniz</option>
+                                    @foreach($arriving as $city)
+                                        <option value="{{ $city }}" {{ Request::get('to') == $city ? 'selected' : null  }}>{{ $city }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right:20px;">
+                                <label for="">Yardım Türüne Göre</label>
+                                <select name="category_id" id="" class="form-control">
+                                    <option value="">Seçiniz</option>
+                                    @foreach($categories as $category)
+                                        <option value="{{ $category->id }}" {{ Request::get('category_id') == $category->id ? 'selected' : null  }}>{{ $category->name }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right:20px;">
+                                <label for="">Statüsüne Göre</label>
+                                <select name="status" id="" class="form-control">
+                                    <option value="">Seçiniz</option>
+                                    <option value="is_arrived" {{ Request::get('status') == 'is_arrived' ? 'selected' : null  }}>Yardım Ulaştı/Bekliyor</option>
+                                    <option value="is_done" {{ Request::get('status') == 'is_done' ? 'selected' : null  }}>Yardım Tamamlandı</option>
+                                    <option value="on_road" {{ Request::get('status') == 'on_road' ? 'selected' : null  }}>Yardım Yolda</option>
+                                </select>
+                            </div>
+                            <div class="form-group" style="margin-right:20px;">
+                                <label for="">Plaka/İsme Göre</label>
+                                <input type="text" name="name" class="form-control" value="{{ Request::get('name') }}">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-light-success" style="margin-top:23px;">Filtrele</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                </form>
             </div>
-            <div class="col-sm-12">
-                <hr>
-            </div>
-            <div class="col-sm-12 mt-10" style="margin-top:35px;">
-                <table class="table table-striped- table-hover table-checkable mt-3" id="vehicles"></table>
+        </div>
+    </div>
+    <div class="home-wrapper-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mt-10" style="margin-top:35px;">
+                    <table class="table table-striped table-hover table-checkable mt-3" id="vehicles"></table>
+                </div>
             </div>
         </div>
     </div>
