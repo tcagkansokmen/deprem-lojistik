@@ -95,15 +95,15 @@
                                 <h5>İletişim</h5>
                             </div>
                             <div class="col-12 mb-3">
-                                <label for="plate" class="form-label">Araç Plakası/Yardım Bilgisi</label>
+                                <label for="plate" class="form-label">Araç Plakası/Yardım Bilgisi (*)</label>
                                 <input type="text" class="form-control" id="plate" name="name" placeholder="Lütfen yardım yüklü aracın plakasını girin. Yönlendirme süreçleri için kullanılacaktır.">
                             </div>
                             <div class="col-6">
-                                <label for="contact_name" class="form-label">İletişim Kişi</label>
+                                <label for="contact_name" class="form-label">İletişim Kişi (*)</label>
                                 <input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="İletişime geçilebilecek kişi (Şoför, yetkili vb.)">
                             </div>
                             <div class="col-6">
-                                <label for="contact_phone" class="form-label">İletişim Telefon</label>
+                                <label for="contact_phone" class="form-label">İletişim Telefon (*)</label>
                                 <input type="text" class="form-control phone" name="contact_phone" id="contact_phone" placeholder="İletişime geçilecek telefon">
                             </div>
                             <hr class="mt-5">
@@ -111,7 +111,7 @@
                                 <h5>Ulaşım</h5>
                             </div>
                             <div class="col-6">
-                                <label for="from" class="form-label">Yola Çıkılan Kent</label>
+                                <label for="from" class="form-label">Yola Çıkılan Kent (*)</label>
                                 <select name="from" id="" class="form-control">
                                     @foreach($cities as $city)
                                         <option value="{{ $city }}">{{ $city }}</option>
