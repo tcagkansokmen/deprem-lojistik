@@ -13,6 +13,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <form action="/" method="GET">
+                    <x-honeypot />
                 <div style="display:flex; flex-direction:row;">
                     <div class="form-group" style="margin-right:20px;">
                         <label for="">Varış Yerine Göre</label>
@@ -64,6 +65,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <form action="{{ route('vehicle-form') }}" method="POST" class="general-form">
+                    <x-honeypot />
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Yeni Tedarik Bilgisi Ekle</h5>
@@ -109,7 +111,7 @@
 
                             <div class="col-6 mt-3">
                                 <label for="start_at" class="form-label">Kalkış Tarih/Saat</label>
-                                <input type="text" class="form-control datetime" id="start_at" name="start_at" placeholder="GG-AA-YYYY SS:DD">
+                                <input type="text" class="form-control datetime" id="start_at" name="start_at" placeholder="GG-AA-YYYY SS:DD" value="{{ date('d-m-Y H:i') }}">
                             </div>
                             <div class="col-6 mt-3">
                                 <label for="end_at" class="form-label">Varış Tarih/Saat</label>
@@ -196,6 +198,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <form action="{{ route('vehicle-form-save') }}" method="POST" class="general-form">
+                    <x-honeypot />
                     @csrf
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Tedarik Detayları</h5>
