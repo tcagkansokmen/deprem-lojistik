@@ -8,13 +8,26 @@
         #vehicles_wrapper .text-left{
             display:flex;
         }
+        .filter-wrapper{
+            display:flex;
+            flex-direction:row;
+        }
+        @media(max-width:550px){
+            .filter-wrapper{
+                display:flex;
+                flex-direction:column;
+                margin-top:15px;
+                border-top:1px solid #ddd;
+                padding-top:15px;
+            }
+        }
     </style>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <form action="/" method="GET">
                     <x-honeypot />
-                <div style="display:flex; flex-direction:row;">
+                <div class="filter-wrapper" >
                     <div class="form-group" style="margin-right:20px;">
                         <label for="">Varış Yerine Göre</label>
                         <select name="to" id="" class="form-control">
