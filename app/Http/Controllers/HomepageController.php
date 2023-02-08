@@ -142,7 +142,7 @@ class HomepageController extends Controller
 
                 $ara = Product::where('category_id', $content['category_id'])->where('name', $content['product'])->first();
                 if($ara){
-                    $product = Product::find($ara);
+                    $product = Product::find($ara->id);
                 }else{
                     $product = new Product();
                     $product->name = $content['product'];
