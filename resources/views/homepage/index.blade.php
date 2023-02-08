@@ -72,8 +72,8 @@
     <div class="home-wrapper-white">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 mt-10" style="margin-top:35px;">
-                    <table class="table table-striped table-hover table-checkable mt-3" id="vehicles"></table>
+                <div class="col-sm-12 mt-10 table-responsive" style="margin-top:35px;">
+                    <table class="table table-striped table-hover table-responsive table-checkable mt-3" id="vehicles"></table>
                 </div>
             </div>
         </div>
@@ -175,7 +175,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn btn-dark mt-5" data-repeater-create type="button">+ Yeni Kalem Ekle</button>
+                                <button class="btn btn-dark btn-sm mt-5" data-repeater-create type="button">+ Yeni Kalem Ekle</button>
                             </div>
                             <p class="mt-2">Yukarıdaki bilgileri ne kadar çok doldurabilirseniz, yardımlar o kadar doğru koordine ederek ihtiyaç bölgelerine yönlendirilebilirler.</p>
                         </div>

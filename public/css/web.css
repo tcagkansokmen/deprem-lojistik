@@ -122,3 +122,12 @@ body{
     margin-bottom:7px;
     font-size:12px;
 }
+
+@media(max-width:767px){
+    .btn-mid{
+        display:flex;
+        flex-direction:row;
+        margin-bottom:15px;
+        justify-content: center;
+    }
+}
