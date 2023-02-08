@@ -122,10 +122,6 @@ $(document).ready(function () {
                     }
                 }
             },
-            { data: 'id', name: 'id', title: 'İçerik', searchable: false, "render": function (data, type, row) {
-                    return 'Detaylar'
-                }
-            },
             { data: 'id', name: 'id', title: 'İşlem', searchable: false, "render": function (data, type, row) {
                     return '<button class="btn btn-dark detail-modal" data-id="'+row.id+'">Detayları Gör</button>&nbsp;<button class="btn btn-info update-modal" data-id="'+row.id+'">Güncelle</button>'
                 }
