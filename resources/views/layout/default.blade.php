@@ -37,7 +37,7 @@
     <script src="js/repeater.js"></script>
     <script src="js/forms.js"></script>
 
-    <link href="/css/web.css" rel="stylesheet">
+    <link href="/css/web.css?v=1.1" rel="stylesheet">
 
     {{-- Includable CSS --}}
     @yield('styles')
