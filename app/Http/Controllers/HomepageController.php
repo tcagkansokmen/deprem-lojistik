@@ -57,7 +57,7 @@ class HomepageController extends Controller
 
         if(isset($parameters['category_id'])){
             $vehs = VehicleContent::where('category_id', $parameters['category_id'])->pluck('vehicle_id')->toArray();
-            $vehicles->whereIn('vehicle_id', $vehs);
+            $vehicles->whereIn('id', $vehs);
         }
 
         if(isset($parameters['status'])){
