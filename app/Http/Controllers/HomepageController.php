@@ -99,7 +99,7 @@ class HomepageController extends Controller
             'contact_name' => 'required',
             'contact_phone' => 'required',
             'from' => 'required',
-            'to' => 'required',
+            'to' => 'nullable',
             'contents.*.category_id' => 'required',
             'contents.*.product' => 'required',
             'contents.*.unit' => 'required',

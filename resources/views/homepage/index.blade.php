@@ -115,7 +115,7 @@
                             </div>
                             <div class="col-6 mt-3">
                                 <label for="end_at" class="form-label">Varış Tarih/Saat</label>
-                                <input type="text" class="form-control datetime" id="end_at" placeholder="GG-AA-YYYY SS:DD">
+                                <input type="text" class="form-control datetime" name="end_at" id="end_at" placeholder="GG-AA-YYYY SS:DD">
                             </div>
 
                             <hr class="mt-3">
