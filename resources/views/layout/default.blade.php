@@ -173,7 +173,6 @@ $(document).ready(function () {
         });
     });
 
-
     $('.general-form').ajaxForm({
         beforeSubmit:  function(formData, jqForm, options){
             var val = null;
